@@ -6,7 +6,7 @@ package project6;
 /**
  * Class able of holding String of pegs and the number of black and white pegs used.
  * 
- * @author Rohan T. and Bryan V.
+ * @author Rohan Tripathi
  *
  */
 public class Game{
