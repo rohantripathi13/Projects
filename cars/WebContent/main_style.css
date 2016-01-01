@@ -1,0 +1,103 @@
+@CHARSET "ISO-8859-1";
+body{
+	padding:10px;
+	background-color: white; 
+	font-weight: bolder;
+	color: black;
+	line-height: 1.5em;
+	font-family: sans-serif;
+	-webkit-animation: mymove 6s infinite;
+}
+#dd{
+	-webkit-animation: expand 6s infinite;
+}
+@-webkit-keyframes mymove {
+    from {color: black;}
+    to {color: white;}
+}
+@-webkit-keyframes expand{
+    0%{height:0px}
+    100%{height:70px}
+}
+span{
+	visibility: hidden;
+}
+#outer{
+	background-image: url("images/main_bg.jpg");
+	border: 2px dashed black;
+}
+.frimage{
+	border: 2px inset gray;
+	padding:15px;
+	margin: 20px;
+	box-shadow:10px 10px 10px #282828;
+	background-color:black;
+}
+.mbimage{
+	border: 2px inset gray;
+	padding:15px;
+	margin: 20px;
+	box-shadow:10px 10px 10px #282828;
+	background-color:black;
+}
+img.himage{
+	border: 5px inset white;
+	}
+a:hover img.himage{
+	box-shadow:10px 10px 10px brown;
+	visibility:visible;
+    padding:10px;
+	background-color: black;
+}
+a:hover img.frimage{
+	box-shadow:10px 10px 10px yellow;
+	visibility:visible;
+    padding:10px;
+	background-color: black;
+}
+a:hover img.mbimage{
+	box-shadow:10px 10px 10px white;
+	visibility:visible;
+    padding:10px;
+	background-color: black;
+}
+.hover p, .hover1 p, .hover2 p{
+	display: none;
+    color: #000000;
+}
+.para{
+	margin-right: 400px;
+	border: 1px solid black;
+}
+.hover:hover p {
+	position:absolute;
+	top:500px;
+	left: 950px;
+	width: 200px;
+    background-color: rgba(0,0,0, 0.3);
+    display: block;
+}
+.hover1:hover p {
+	position:absolute;
+	top:800px;
+	left: 950px;
+	width: 200px;
+    background-color: rgba(0,0,0, 0.3);
+    display: block;
+}
+.hover2:hover p {
+	position:absolute;
+	top:1200px;
+	left: 950px;
+	width: 200px;
+    background-color: rgba(0,0,0, 0.3);
+    display: block;
+}
+
+.bar{
+	visibility: hidden;
+	position: absolute;
+    padding:10px;
+	background-color: gray;
+	color:red;
+}

@@ -1,0 +1,72 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-color: #D0D0D0;
+	padding:8px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	line-height: 1.5em;
+	font-size: 1.1em;
+}
+@-webkit-keyframes mymove {
+    from {color: #F8F8E8;}
+    to {color: black;}
+}
+#logo{
+	box-shadow:10px 10px 10px #282828;
+}
+u{
+	color: #D0D0D0;
+}
+.lg{
+	border:1px inset black;
+	-webkit-animation: mymove 6s infinite;
+	padding:10px;
+	background-image: url("images/mb_bg.jpg");
+}
+a:LINK{
+	color:maroon;
+}
+a:VISITED{
+	color:green;
+}
+#qwe{
+	box-shadow:13px 13px 13px #282828;
+	width:300px;
+	background-color: white;
+	float: right;
+	margin-right: 15px;
+	padding:10px;
+	border:2px solid gray;
+}
+ul{
+	color:#336699;
+	list-style: none;
+}
+#tbt{
+	box-shadow:10px 10px 10px #282828;
+	background-color: white;
+	margin-right: 15px;
+	padding:10px;
+	border:2px solid gray;
+}
+.aws{
+	color:black;
+	text-align: center;
+}
+.lt{
+	box-shadow:10px 10px 10px #282828;
+	width:inherit;
+	background-color: #F0F0E0;
+	float: left;
+	margin: 15px;
+	padding:10px;
+	border:2px solid gray;
+}
+.rt{
+	box-shadow:10px 10px 10px #282828;
+	width:inherit;
+	background-color: #F0F0E0;
+	float: right;
+	margin: 15px;
+	padding:10px;
+	border:2px solid gray;
+}

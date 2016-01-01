@@ -1,0 +1,47 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-color: black;
+	-webkit-animation: mymove 5s infinite;
+	font-family: Courier;
+	font-weight: bold;
+	line-height: 1.7em;
+}
+@-webkit-keyframes mymove {
+    from {color: #FFCC33;}
+    to {color: red;}
+}
+#out{
+	background-image: url("images/fr_bg.jpg");
+	margin-left: 30px;
+	padding:10px;
+}
+#frsb{
+	box-shadow:7px 7px 7px #FFFF66;
+	padding:10px;
+	margin: 10px;
+	border:outset;
+	border-color: black;
+	background-color: gray;
+	color:brown;
+	float:left;
+	width: 300px;
+	font-size: 13px;
+}
+mark{
+	background-color: #999966;
+	color: #990000;
+}
+.a1{
+	color: #CC0033;
+}
+#rx1{
+	float:right;
+}
+.tbl{
+	width: 90%;
+	box-shadow:10px 10px 10px #FFFF66;
+	padding: 10px;
+	text-align: center;
+	border-spacing: 5px;
+	background-color: gray;
+}

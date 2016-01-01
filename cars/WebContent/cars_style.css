@@ -1,0 +1,40 @@
+@CHARSET "ISO-8859-1";
+body{
+	background-image: url("images/bgd.jpg");
+	cursor: pointer;
+}
+#parent{
+	margin-left: 30px;
+	font-family: Courier;
+	font-weight: bold;
+}
+.alpha{
+	margin-left: 20px;
+	margin-right: 5px;;
+}
+#beta{
+	border-width: 3px;
+	color: red;
+	box-shadow:10px 10px 10px #282828;
+	background-color: white;
+	width:300px;
+	padding: 10px;
+	margin-right: 10px;
+	margin-left:10px;
+	border-style:inset;
+	border-color:gray;
+	float:right;
+}
+.ramos{
+	padding:15px;
+	border:medium;
+	margin: 15px;
+	background-color: gray;
+	box-shadow:10px 10px 10px #282828;
+}
+#zeno{
+	text-align: center;
+	margin: 10px;
+	background-color: white;
+	box-shadow:10px 10px 10px #282828;
+}
