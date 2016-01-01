@@ -74,7 +74,7 @@ public class Main extends Application {
 	 * to solve the peg combination. Computer vs. Human gameplay involves the computer trying to solve
 	 * the person's peg combination while receiving feedback from the person.
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * 
 	 */
 	@Override
@@ -146,7 +146,7 @@ public class Main extends Application {
 				 * Handles button push interactions for the setSpecs window. Once the "Start the Game"
 				 * button is pushed, the actual Human vs. Computer gameplay will begin
 				 * 
-				 * @author Rohan Tripathi
+				 * @author Rohan T. and Bryan V.
 				 */
 				private void usersTurn() {
 					pd.setOnAction(new EventHandler<ActionEvent>() {
@@ -199,7 +199,7 @@ public class Main extends Application {
 				 * Handles button push interactions for the setSpecs window. Once the "Start the Game"
 				 * button is pushed, the actual Computer vs. Human gameplay will begin.
 				 * 
-				 * @author Rohan Tripathi
+				 * @author Rohan T. and Bryan V.
 				 */
 				private void compTurn() {
 					pd.setOnAction(new EventHandler<ActionEvent>() {
@@ -232,7 +232,7 @@ public class Main extends Application {
 						 * Calls the generatePermutationsRec method to add the permutations of 
 						 * the pegs to posout.
 						 * 
-						 * @author Rohan Tripathi
+						 * @author Rohan T. and Bryan V.
 						 * @param color
 						 * @param len
 						 */
@@ -244,7 +244,7 @@ public class Main extends Application {
 						/** 
 						 * The main recursive method to padd all possible strings of length len to posout
 						 * 
-						 * @author Rohan Tripathi
+						 * @author Rohan T. and Bryan V.
 						 * @param color1
 						 * @param prefix
 						 * @param n
@@ -287,7 +287,7 @@ public class Main extends Application {
 	 * Computer vs. Human main method. Directs the operation of the game until all the attempts have
 	 * been used up or if the Human was caught cheating.
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	public void compInput() {
 		row = 1;	//Initialize row to 1
@@ -332,7 +332,7 @@ public class Main extends Application {
 	/**
 	 * Generates the GUI window if the computer loses the Computer vs. Human game
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	private void generateCompLost() {
 		generateCorrectAns();	//Generate actual peg combination onto the GUI
@@ -364,7 +364,7 @@ public class Main extends Application {
 	/**
 	 * Returns the Y/N feedback requested by the computer.
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * @return "Y" or "N" depending on whether the peg guess is correct or not
 	 */
 	private char compGuess() {
@@ -394,7 +394,7 @@ public class Main extends Application {
 	 * Human determines the feedback of the computer's peg guess. If the human is caught cheating,
 	 * then the game ends immediately and the computer wins.
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	public void evaluateChoice() {
 		String reply; //Holds Scanner input
@@ -585,7 +585,7 @@ public class Main extends Application {
 	/**
 	 * Generates a Cheat Message Window. Clicking Exit immediately terminates the program
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	private void generateCheatMsg() {
 		Stage cc = new Stage();
@@ -615,7 +615,7 @@ public class Main extends Application {
 	/**
 	 * Generates GUI representation of correct pegs combination.
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	private void generateCorrectAns() {
 		row++;
@@ -677,7 +677,7 @@ public class Main extends Application {
 	/**
 	 * Generates computer winning window as well as generation of correct answer of pegs combination on GUI
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	private void generateCompWin() {
 		generateCorrectAns();	//Generates GUI representation of correct peg combination
@@ -709,7 +709,7 @@ public class Main extends Application {
 	/**
 	 * Sets the peg combination for the human to guess.
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	public void setMyPegs() {
 		System.out.println("Welcome to the world of Mastermind !!");
@@ -738,7 +738,7 @@ public class Main extends Application {
 	/**
 	 * Adds a hBox to the BorderPane
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * @return hBox, which is added to the BorderPane
 	 */
 	private Node addHbox() {
@@ -766,7 +766,7 @@ public class Main extends Application {
 	/**
 	 * Selects random Pegs
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * @return Random peg selected
 	 */
 	public static char generateRandompegs() {
@@ -792,7 +792,7 @@ public class Main extends Application {
 	/**
 	 * Calculates the number of black pegs in the guess
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * @param array1
 	 * @param guess
 	 * @return The number of black pegs in the guess
@@ -813,7 +813,7 @@ public class Main extends Application {
 	/**
 	 * Calculates the number of white pegs in the guess
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * @param array1
 	 * @param guess
 	 * @return The number of white pegs in the guess
@@ -837,7 +837,7 @@ public class Main extends Application {
 	 * Human plays aganist the computer to guess the correct peg combination in order to win the game
 	 * The GUI is updated at the end of the method
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 */
 	public void userInput() {
 		String comp;	//comp is the String guess that you give
@@ -1029,11 +1029,11 @@ public class Main extends Application {
 	/**
 	 * Returns the hashcode of a String, based on the characters used
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * @param str
 	 * @return
 	 */
-	static int HashString(String str) {s
+	static int HashString(String str) {
 		int hashCode = 0;
 		for (int length = str.length(); length > 0; length--) {
 			hashCode += str.charAt(length - 1);
@@ -1044,7 +1044,7 @@ public class Main extends Application {
 	/**
 	 * Starts the JavaFX program
 	 * 
-	 * @author Rohan Tripathi
+	 * @author Rohan T. and Bryan V.
 	 * @param args
 	 */
 	public static void main(String[] args) {
